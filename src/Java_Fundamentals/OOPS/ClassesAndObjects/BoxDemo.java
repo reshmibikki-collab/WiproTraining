@@ -1,4 +1,4 @@
-package Java_Fundamentals.Logic_Building.Day4.OOPS.ClassesAndObjects;
+package Java_Fundamentals.OOPS.ClassesAndObjects;
 
 class Box {
     double width;
@@ -22,5 +22,3 @@ public class BoxDemo {
         System.out.println("The volume of the box is: " + myBox.getVolume());
     }
 }
-    
-
