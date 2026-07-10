@@ -1,35 +1,18 @@
 package Java_Fundamentals.OOPS.Abstraction;
 
-public class Author {
+public class AuthorDemo {
 
-    private String name;
-    private String email;
-    private char gender;
+    public static void main(String[] args) {
 
-    public Author(String name, String email, char gender) {
-        this.name = name;
-        this.email = email;
-        this.gender = gender;
-    }
+        Author author = new Author(
+                "James Gosling",
+                "james@example.com",
+                'M');
 
-    public String getName() {
-        return name;
-    }
+        System.out.println(author);
 
-    public String getEmail() {
-        return email;
-    }
+        author.setEmail("gosling@gmail.com");
 
-    public char getGender() {
-        return gender;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    @Override
-    public String toString() {
-        return "Author[name=" + name + ", email=" + email + ", gender=" + gender + "]";
+        System.out.println(author);
     }
 }
