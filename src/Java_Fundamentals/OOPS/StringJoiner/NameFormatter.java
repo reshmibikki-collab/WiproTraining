@@ -1,0 +1,37 @@
+package Java_Fundamentals.OOPS.StringJoiner;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class NameFormatter {
+
+    public static String formatNames(ArrayList<String> names) {
+
+        java.util.StringJoiner sj = new java.util.StringJoiner(", ", "{", "}");
+
+        for (String name : names) {
+            sj.add(name);
+        }
+
+        return sj.toString();
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        ArrayList<String> names = new ArrayList<>();
+
+        System.out.print("Enter number of names: ");
+        int n = sc.nextInt();
+        sc.nextLine();
+
+        for (int i = 1; i <= n; i++) {
+            System.out.print("Enter name " + i + ": ");
+            names.add(sc.nextLine());
+        }
+
+        System.out.println("Output: " + formatNames(names));
+
+        sc.close();
+    }
+}
