@@ -1,9 +1,0 @@
--- Display employee last name and department id for employee 176
-
-SELECT 
-    last_name, 
-    department_id
-FROM 
-    employees
-WHERE 
-    employee_id = 176;

@@ -1,0 +1,17 @@
+
+
+CREATE TABLE MY_EMPLOYEE AS 
+SELECT 
+    employee_id, 
+    first_name, 
+    last_name, 
+    department_id, 
+    salary
+FROM 
+    EMPLOYEES
+WHERE 
+    1=2;
+
+-- Verify the structure of the table
+
+DESCRIBE MY_EMPLOYEE;
