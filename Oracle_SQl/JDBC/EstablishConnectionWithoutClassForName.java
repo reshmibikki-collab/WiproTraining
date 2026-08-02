@@ -1,0 +1,37 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class EstablishConnectionWithoutClassForName {
+
+    public static void main(String[] args) {
+
+        // Oracle Database Connection Details
+        String url = "jdbc:oracle:thin:@localhost:1522/FREEPDB1";
+        String user = "system";
+        String password = "Welcome123";
+
+        Connection connection = null;
+
+        try {
+            // Establish connection without using Class.forName()
+            connection = DriverManager.getConnection(url, user, password);
+
+            System.out.println("Connection Established Successfully.");
+
+        } catch (SQLException e) {
+            System.out.println("Connection could not be established.");
+            System.out.println("Description: " + e.getMessage());
+
+        } finally {
+            try {
+                if (connection != null && !connection.isClosed()) {
+                    connection.close();
+                    System.out.println("Connection Closed Successfully.");
+                }
+            } catch (SQLException e) {
+                System.out.println("Error while closing connection: " + e.getMessage());
+            }
+        }
+    }
+}
