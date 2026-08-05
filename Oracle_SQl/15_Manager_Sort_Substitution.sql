@@ -1,4 +1,4 @@
--- Display employees based on manager id and dynamic sorting column
+
 
 SELECT 
     employee_id, 

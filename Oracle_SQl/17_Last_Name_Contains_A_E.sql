@@ -1,4 +1,4 @@
--- Display employees whose last names contain both 'a' and 'e'
+
 
 SELECT 
     last_name

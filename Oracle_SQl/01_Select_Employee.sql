@@ -1,4 +1,4 @@
--- Display employee details
+
 
 SELECT 
     employee_id,

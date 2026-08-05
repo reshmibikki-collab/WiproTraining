@@ -1,4 +1,4 @@
--- Display employee details with column aliases
+
 
 SELECT 
     employee_id AS "Emp #", 

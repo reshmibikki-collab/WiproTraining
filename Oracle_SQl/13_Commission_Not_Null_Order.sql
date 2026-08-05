@@ -1,4 +1,4 @@
--- Display employees having commission percentage and sort by salary and commission
+
 
 SELECT 
     last_name, 

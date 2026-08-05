@@ -13,10 +13,10 @@ public class EstablishConnection {
         Connection connection = null;
 
         try {
-            // Load Oracle JDBC Driver
+            
             Class.forName("oracle.jdbc.OracleDriver");
 
-            // Establish Connection
+            
             connection = DriverManager.getConnection(url, user, password);
 
             System.out.println("Connection Established Successfully.");

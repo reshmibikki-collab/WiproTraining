@@ -6,7 +6,7 @@ public class EstablishConnectionWithoutClassForName {
 
     public static void main(String[] args) {
 
-        // Oracle Database Connection Details
+        
         String url = "jdbc:oracle:thin:@localhost:1522/FREEPDB1";
         String user = "system";
         String password = "Welcome123";
@@ -14,7 +14,7 @@ public class EstablishConnectionWithoutClassForName {
         Connection connection = null;
 
         try {
-            // Establish connection without using Class.forName()
+            
             connection = DriverManager.getConnection(url, user, password);
 
             System.out.println("Connection Established Successfully.");

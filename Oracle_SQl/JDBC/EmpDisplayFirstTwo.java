@@ -14,22 +14,20 @@ public class EmpDisplayFirstTwo {
         String query = "SELECT empno, ename FROM emp";
 
         try {
-            // Load Oracle JDBC Driver
+           
             Class.forName("oracle.jdbc.OracleDriver");
 
-            // Establish Connection
+            
             Connection conn = DriverManager.getConnection(url, user, password);
 
-            // Create Statement
-            Statement stmt = conn.createStatement();
-
-            // Execute Query
+            
+            Statement stmt = conn.createStatement;
             ResultSet rs = stmt.executeQuery(query);
 
             System.out.println("EMPNO\tENAME");
             System.out.println("--------------------");
 
-            // Display Records
+            
             while (rs.next()) {
                 int empNo = rs.getInt(1);
                 String eName = rs.getString("ename");

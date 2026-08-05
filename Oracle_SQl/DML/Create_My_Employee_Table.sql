@@ -12,6 +12,6 @@ FROM
 WHERE 
     1=2;
 
--- Verify the structure of the table
+
 
 DESCRIBE MY_EMPLOYEE;

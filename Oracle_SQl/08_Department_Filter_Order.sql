@@ -1,4 +1,4 @@
--- Display employees from departments 20 and 50 sorted by last name
+
 
 SELECT 
     last_name, 

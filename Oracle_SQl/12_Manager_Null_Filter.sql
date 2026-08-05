@@ -1,4 +1,4 @@
--- Display employees who do not have a manager
+
 
 SELECT 
     last_name, 

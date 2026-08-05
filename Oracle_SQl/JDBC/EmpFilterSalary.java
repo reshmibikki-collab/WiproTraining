@@ -11,20 +11,20 @@ public class EmpFilterSalary {
         String user = "system";
         String password = "Welcome123";
 
-        // SQL query to filter employees with salary between 1000 and 2000
+        
         String query = "SELECT ename, job, sal, comm FROM emp WHERE sal > 1000 AND sal < 2000";
 
         try {
-            // Load Oracle JDBC Driver
+            
             Class.forName("oracle.jdbc.OracleDriver");
 
-            // Establish Connection
+            
             Connection conn = DriverManager.getConnection(url, user, password);
 
-            // Create Statement
+            
             Statement stmt = conn.createStatement();
 
-            // Execute Query
+            
             ResultSet rs = stmt.executeQuery(query);
 
             System.out.println("ENAME\tJOB\t\tSAL\tCOMM");

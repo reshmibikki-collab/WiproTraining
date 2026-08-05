@@ -1,4 +1,3 @@
--- Display employees whose last name has 'a' as the third character
 
 SELECT 
     last_name

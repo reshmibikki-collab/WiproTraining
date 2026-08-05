@@ -1,4 +1,4 @@
--- Display employees hired in year 1994
+-
 
 SELECT 
     last_name, 

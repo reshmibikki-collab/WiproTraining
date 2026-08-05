@@ -1,4 +1,3 @@
--- Display employees whose salary is greater than user-provided value
 
 SELECT 
     last_name, 
